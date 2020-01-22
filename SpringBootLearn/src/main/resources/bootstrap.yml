@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: springbootlearn
+  cloud:
+    consul:
+      host: 127.0.0.1
+      port: 8624
+      config:
+        enabled: true
+        format: yaml
+    config:
+      discovery:
+        service-id: configserver
+        enabled: true
+    zookeeper:
+      allow-override: true
+      connect-string: 10.152.84.17:8623
